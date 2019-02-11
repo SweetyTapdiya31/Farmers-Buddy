@@ -1,0 +1,46 @@
+<div class="container">
+    <form #mform="ngForm" (ngSubmit)="add(mform)" class="form table-responsive">
+            <table class="table table-striped table-bordered" style="font-family: Roboto">
+       <thead>
+            <th><b>Full Name</b></th>
+            <th><b>Contact Number</b></th>
+            <th><b>Email Id</b></th>
+            <th><b>Address</b></th>
+            <th><b>State</b></th>
+            <th><b>City</b></th>
+            <th><b>Pincode</b></th>
+            <th><b>Account Number</b></th>
+            <th><b>IFSC code</b></th>
+        
+            <th><b>Aadhar</b></th>
+            <th><b>PAN</b></th>
+            <th><b>Trader License</b></th>
+            <th><b>Password</b></th>
+            <th><b>Confirm Password</b></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input [(ngModel)]="bidder.fullName" placeholder="Enter Full Name" name="fullName" /></td>
+                <td><input [(ngModel)]="bidder.contactNo" placeholder="Enter Contact No" name="contactNo" /></td>
+                <td><input [(ngModel)]="bidder.emailId" placeholder="Enter Email Id" name="emailId" /></td>
+                <td><input [(ngModel)]="bidder.address" placeholder="Enter Address" name="address" /></td>
+                <td><input [(ngModel)]="bidder.state" placeholder="Enter State" name="state" /></td>
+                <td><input [(ngModel)]="bidder.city" placeholder="Enter City" name="city" /></td>
+                <td><input [(ngModel)]="bidder.pincode" placeholder="Enter Pincode" name="pincode" /></td>
+                <td><input [(ngModel)]="bidder.accountNo" placeholder="Enter Account No" name="accountNo" /></td>
+                <td><input [(ngModel)]="bidder.ifscCode" placeholder="Enter IFSC code" name="ifscCode" /></td>
+                <td><input [(ngModel)]="bidder.aadhar" name="aadhar" /></td>
+                <td><input [(ngModel)]="bidder.pan" name="pan" /></td>
+                <td><input [(ngModel)]="bidder.traderLicense" name="traderLicense" /></td>
+                <td><input [(ngModel)]="bidder.password" placeholder="Enter password" name="password" /></td>
+                <td><input [(ngModel)]="bidder.confirmPassword" placeholder="Enter password again" name="confirmPassword" /></td>
+                </tr>
+            <tr>
+                <td><input type="submit" value="Add" class="btn btn-md btn-default" /> </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</div>
+<h3 class="text-center"> {{ response }} </h3>   
+        
