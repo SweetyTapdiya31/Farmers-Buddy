@@ -1,0 +1,50 @@
+<div class = "panel">
+    <div class = "panel-heading">{{ title }}</div>
+    <div class = "panel-body">
+    <div class="table-responsive">      
+    <body>
+
+<form>
+
+<div class="container">
+
+
+
+
+<label for="cropName"><b>Crop Name: </b></label>
+<input type="text" name="cropName" [(ngModel)] = "user.cropName" required><br><br>
+
+
+
+<label for="croptype"><b>Crop Type: </b></label>
+<input type="text" name="cropType" [(ngModel)] = "user.cropType" required><br><br>
+
+<b>Fertilizer Type:</b>
+<input type="text" name="fertilizerType" [(ngModel)] = "user.fertilizerType" required><br><br>
+
+<b>Quantity: </b>
+<input type="text" name="quantity" [(ngModel)] = "user.quantity" required (keypress)="keyPress($event)"><br><br>
+
+<b>Price per Quintal: </b>
+<input type="text" name="priceperquintal" [(ngModel)] = "user.priceperquintal" required (keypress)="keyPress($event)"><br><br>
+
+<b>Soil pH Certificate: </b>
+<input type="file" name="soilpHCertificate" [(ngModel)] = "user.soilpHCertificate" required><br><br>
+
+
+<button type="submit"class="registerbtn"
+(click)="store()">PlaceRequest</button>
+</div>
+
+<div 
+class="container signin">
+</div>
+<h3>{{response}}</h3>
+
+
+
+
+</form>
+
+
+</body>
